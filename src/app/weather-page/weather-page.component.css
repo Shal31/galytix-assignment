@@ -1,0 +1,17 @@
+.btn-back-country{
+    background-color: limegreen;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+
+}
+.txt-center{
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    padding: 20px;
+    background-color: azure;
+    border: solid #3aa8ae;
+}

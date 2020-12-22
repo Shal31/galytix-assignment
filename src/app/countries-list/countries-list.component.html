@@ -1,0 +1,17 @@
+  <mat-card class="country-card" *ngFor="let item of this.countries">
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>{{item['name']}}</mat-card-title>
+      <mat-card-subtitle>{{item['region']}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{item['flag']}}" alt="{{item['name']}}">
+    <mat-card-content>
+      <p>{{item['subregion']}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="checkWeather(item)">Check Weather</button>
+      <!-- <a href="https://www.google.es/maps/@{{ item['latlng'] }}z" target="_blank" style="color: black;"><mat-icon matSuffix style="float: right; padding-right: 12px; padding-top: 4px;">my_location</mat-icon></a> -->
+    </mat-card-actions>
+  </mat-card>
+    
+<router-outlet></router-outlet>
