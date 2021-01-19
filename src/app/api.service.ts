@@ -18,7 +18,7 @@ export class ApiService {
   }
 
   getWeather(capitalCodeString:string) {
-    return this.httpClient.get(`https://api.openweathermap.org/data/2.5/weather?q=`+capitalCodeString+'&APPID=794ee95e63c5a32aaf88cd813fa2e425')
+    return this.httpClient.get(`https://api.openweathermap.org/data/2.5/weather?q=`+capitalCodeString+'&APPID=UseYourCreatedAppID')
   } 
 
 }
